@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://derp-bear.herokuapp.com/" />
+<title>Script #1.3</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Script #1.3</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://demo.redmine.org/account/register</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{&quot;user&quot; + Math.floor(Math.random()*9999);}</td>
+	<td>userLogin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_login</td>
+	<td>${userLogin}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_password_confirmation</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_firstname</td>
+	<td>Dmitro</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_lastname</td>
+	<td>Malikov</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{&quot;myemail&quot; + Math.floor(Math.random()*9999) + &quot;@ukr.net&quot;;}</td>
+	<td>userMail</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_mail</td>
+	<td>${userMail}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://derp-bear.herokuapp.com/" />
+<title>Script #1.2</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Script #1.2</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://derp-bear.herokuapp.com/forms/basic_form_example</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=first_name</td>
+	<td>Dmitro</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=last_name</td>
+	<td>Malikov</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>dmitromalikov@ukr.net</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=website_url</td>
+	<td>http://dmitromalikov.ua</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@id='pet_select']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Horse</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=date_of_birth</td>
+	<td>01.01.1980</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.second-icon.fui-radio-checked</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.second-icon.fui-checkbox-checked</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password_field</td>
+	<td>123Ur90f</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=free_text_area</td>
+	<td>Hdsfsdjlkfjdsf</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=home_link</td>
+	<td>Home</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=about_link</td>
+	<td>About</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=login_link</td>
+	<td>Login</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>Thank you for submitting the form</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=legend</td>
+	<td>Your Information</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//*[@id='first_name']</td>
+	<td>Dmitro</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='results']/header/ul/li[1]/fieldset/ol/li[2]/label</td>
+	<td>Last Name</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//*[@id='last_name']</td>
+	<td>Malikov</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='results']/header/ul/li[1]/fieldset/ol/li[3]/label</td>
+	<td>Email</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//*[@id='email']</td>
+	<td>dmitromalikov@ukr.net</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='results']/header/ul/li[1]/fieldset/ol/li[4]/label</td>
+	<td>Website</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//*[@id='website_url']</td>
+	<td>http://dmitromalikov.ua</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='results']/header/ul/li[1]/fieldset/ol/li[5]/label</td>
+	<td>Select a Pet</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//*[@id='website_url']</td>
+	<td>http://dmitromalikov.ua</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='results']/header/ul/li[2]/fieldset/legend</td>
+	<td>Date</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='results']/header/ul/li[2]/fieldset/ol/li/label</td>
+	<td>Date of Birth</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//*[@id='dob']</td>
+	<td>01.01.1980</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='results']/header/ul/li[3]/fieldset/legend</td>
+	<td>What is your Sex?</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='results']/header/ul/li[3]/fieldset/ol/li/div/div/label</td>
+	<td>On</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//section[@id='results']/header/ul/li[4]/fieldset/legend</td>
+	<td>How do you get to work?</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//section[@id='results']/header/ul/li[4]/fieldset/ol/li/div/div/label</td>
+	<td>Bike</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//section[@id='results']/header/ul/li[5]/fieldset/legend</td>
+	<td>Password Example</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//section[@id='results']/header/ul/li[5]/fieldset/ol/li/label</td>
+	<td>Example Password</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//section[@id='results']/header/ul/li[6]/fieldset/legend</td>
+	<td>Terms of Agreement</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//section[@id='results']/header/ul/li[6]/fieldset/ol/li/label</td>
+	<td>Free Text Field</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//*[@id='free_text_area']</td>
+	<td>Hdsfsdjlkfjdsf</td>
+</tr>
+</tbody></table>
+</body>
+</html>
