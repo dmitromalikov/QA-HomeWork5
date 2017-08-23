@@ -1,6 +1,7 @@
 package HomeWork5.lesson5.junit;
 
 
+
 public class Employee {
 
 		public double grade (double evaluationForCertification, double evaluationForTests, double averagePerformanceOfPlansForLast3Years) { //����� ����������
