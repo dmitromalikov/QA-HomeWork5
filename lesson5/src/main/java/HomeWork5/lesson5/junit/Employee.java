@@ -63,7 +63,9 @@ public class Employee {
 			double result = (socialContribution + singleTax);
 		return result;
 		}
-		
+		public static void main(String[] args) {
+			System.out.println("Parametres of employee");
+		}
 	
 		// TODO Auto-generated method stub
 
