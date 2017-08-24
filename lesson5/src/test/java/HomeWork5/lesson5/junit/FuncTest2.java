@@ -36,7 +36,7 @@ public class FuncTest2 {
 		}
 
 	 @Rule
-	 public Timeout timeout = Timeout.seconds(10);
+	 public Timeout timeout = new Timeout (10);
 	
 	@Test
 	public void testFactCompensationFuelAuto () { //����������� ������� ����

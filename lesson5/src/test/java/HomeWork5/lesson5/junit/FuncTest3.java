@@ -36,7 +36,7 @@ public class FuncTest3 {
 		}
 
 	 @Rule
-	 public Timeout timeout = Timeout.seconds(10);
+	 public Timeout timeout = new Timeout(10);
 	 
 	@Ignore
 	public void testOther () { 
